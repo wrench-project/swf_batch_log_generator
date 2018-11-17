@@ -3,13 +3,14 @@ cmake_minimum_required(VERSION 3.2)
 message(STATUS "Cmake version ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}.${CMAKE_PATCH_VERSION}")
 project(swf_batch_log_generator)
 add_definitions("-Wall -Wno-unused-variable -Wno-unused-private-field")
-set(CMAKE_CXX_STANDARD 13)
+set(CMAKE_CXX_STANDARD 17)
 
 # include directories for dependencies and WRENCH libraries
 include_directories(src/ /usr/include /usr/local/include)
 # source files
 set(SOURCE_FILES
         src/main.cpp
+        src/BatchLogGenerator.cpp
         )
 
 # generating the executable
